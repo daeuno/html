@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="mypage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <title>ALLTHEMOVIE</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/9f76d69e26.js" crossorigin="anonymous"></script>
+    <script src="mypage.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="top">
+        <div class="header">
+            <div class="header_logo">
+                <i class=""></i>
+                <a href="/mainpage/mainpage.html">ALLTHEMOVIE</a>
+            </div>
+
+            <div class="header_user">
+                <li>
+                    <i class="fas fa-user-circle"></i>
+                </li>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="main_sec">
+        <div class="border">
+            <div class="top_page">
+                <div class="pagebox">
+
+                    <button id="open"><i class="fas fa-cog"></i></button>
+                    
+                    <div class="modal hidden">
+                        <div class="modal_overlay"></div>
+                        <div class="modal_content">
+                            <div class="modal_header">
+                                <div>
+                                    <button>&#10006;</button>
+                                </div>
+                            </div>
+                            <div class="main-form">
+                                <h2>설정</h2>
+                                <hr>
+                                <div class="cs"><a href="/cscenter/qna.html">
+                                        <h4>고객센터</h4>
+                                    </a></div>
+                                <div class="mem"><a href="#">
+                                        <div id="pi-show">
+                                            <h4>회원 정보 수정</h4>
+                                        </div>
+                                    </a></div>
+                                <div class="logout"><a href="#">
+                                        <h4>로그아웃</h4>
+                                    </a></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="profile_image">
+                    <div class="image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+                <div class="nameblock">
+                    <h1 class="profile_name">USER</h1>
+                </div>
+            </div>
+
+
+
+            <div class="wish_movie">
+                <span class="wish_movie_top">내가 찜한 영화</span>&nbsp;<i class="fas fa-heart"></i> <br><br>
+                <div class="slide_wrapper">
+                    <ul class="slides">
+                        <li><img src="img/topgun.jpg" alt=""></li>
+                        <li><img src="img/마녀.jpg" alt=""></li>
+                        <li><img src="img/범죄도시2.jpg" alt=""></li>
+                        <li><img src="img/헌트.jpg" alt=""></li>
+                        <li><img src="img/베를린.jpg" alt=""></li>
+                        <li><img src="img/헤어질결심.jpg" alt=""></li>
+                        <li><img src="img/명량.jpg" alt=""></li>
+                        <li><img src="img/범죄도시2.jpg" alt=""></li>
+                    </ul>
+                    <div class="arrow">
+                        <ul class="controls">
+                            <li class="prev"><span></span></li>
+                            <li class="next"><span></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="watched_movie">
+                <span class="watched_movie_top">최근 시청한 영화</span>&nbsp;<i class="fas fa-film"></i> <br><br>
+                <div class="slide_wrapper2">
+                    <ul class="slides2">
+                        <li><img src="https://picsum.photos/id/123/200/200" alt=""></li>
+                        <li><img src="https://picsum.photos/id/234/200/200" alt=""></li>
+                        <li><img src="https://picsum.photos/id/127/200/200" alt=""></li>
+                        <li><img src="https://picsum.photos/id/345/200/200" alt=""></li>
+                        <li><img src="https://picsum.photos/id/764/200/200" alt=""></li>
+                        <li><img src="https://picsum.photos/id/251/200/200" alt=""></li>
+                        <li><img src="https://picsum.photos/id/271/200/200" alt=""></li>
+                        <li><img src="https://picsum.photos/id/963/200/200" alt=""></li>
+                    </ul>
+                    <div class="arrow2">
+                        <ul class="controls2">
+                            <li class="prev2"><span></span></li>
+                            <li class="next2"><span></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review">
+                <span class="review_top"><a href="/reviewpage/myreview.html">내가 쓴 리뷰</a></span>&nbsp;<i
+                    class="fas fa-pen"></i> <br><br>
+                <div class="slide_wrapper3">
+                    <ul class="slides3">
+                        <li><img src="https://picsum.photos/id/200/200/200" alt=""></li>
+                        <li><img src="https://picsum.photos/id/111/200/200" alt=""></li>
+                        <li><img src="https://picsum.photos/id/222/200/200" alt=""></li>
+                        <li><img src="https://picsum.photos/id/999/200/200" alt=""></li>
+                        <li><img src="https://picsum.photos/id/444/200/200" alt=""></li>
+                        <li><img src="https://picsum.photos/id/555/200/200" alt=""></li>
+                        <li><img src="https://picsum.photos/id/666/200/200" alt=""></li>
+                        <li><img src="https://picsum.photos/id/777/200/200" alt=""></li>
+                    </ul>
+                    <div class="arrow3">
+                        <ul class="controls3">
+                            <li class="prev3"><span></span></li>
+                            <li class="next3"><span></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- 개인정보수정 모달 -->
+
+     <div id="pi-modal">
+        <div class="pimodal">
+            <div class="pi-top-form">
+                <div class="pi-close-modal">
+                    &#10006;
+                </div>
+            </div>
+            <div class="pi-form">
+                <h2>개인정보 수정</h2>
+
+                <form action="">
+
+                    <div class="input-top">
+                        <div class="input-group">
+                            <div style="position: relative;">
+                                <label class="input-label">이메일</label>
+                                <input type="text" disabled="disabled" class="pi-form-control" placeholder="등록되있는@이메일.com"><br>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group password">
+                            <div style="position: relative;">
+                                <label class="input-label">비밀번호</label>
+                                <input type="password" name="password" class="pi-form-control"
+                                    placeholder="변경할 비밀번호 8자 이상 입력"><br>
+                            </div>
+                        </div>
+                    </div >
+
+
+                    <button type="button" class="pi-submit-btn">저장</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div style="border: 1px solid rgb(196, 190, 190); "></div>
+        <div class="one">
+            <a href="#">
+                <div class="zzzz">개인정보 처리방침</div>
+            </a>
+            <a href="#">
+                <div class="zzzz">서비스 이용약관</div>
+            </a>
+            <a href="#">
+                <div class="zzzz">쿠키 정책</div>
+            </a>
+        </div>
+        <div class="two">
+            <a href="#"><img class="mmmm" src="img/foot 페이스북.png" alt="" width="35" height="35"></a>
+            <a href="#"><img class="mmmm" src="img/foot 트위터.png" alt="" width="35" height="35"></a>
+            <a href="#"> <img class="mmmm" src="img/foot 인스타.png" alt="" width="35" height="35"></a>
+            <SELECT class="vvvv" size=1>
+                <OPTION VALUE=1 style="color: rgb(196, 190, 190);">한국어</OPTION>
+                <OPTION VALUE=2 style="color: rgb(196, 190, 190);">English</OPTION>
+                <OPTION VALUE=3 style="color: rgb(196, 190, 190);">日本語</OPTION>
+                <OPTION VALUE=4 style="color: rgb(196, 190, 190);">中国人</OPTION>
+            </SELECT>
+        </div>
+        <div class="three">
+            <div class="aaaa">고객센터 : allthemovie@naver.com / 0000-0000</div>
+            <div class="aaaa">서울특별시 서울구 서울로 00,00빌딩 00층</div>
+            <div class="aaaa">사업자 등록번호 : 000-00-000000</div>
+        </div>
+        <p>&copy; Copyright 2022 by All the movie. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
